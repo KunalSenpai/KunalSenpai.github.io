@@ -1,13 +1,13 @@
 :root {
-  --bg: #070b14;
-  --bg-soft: #0f172a;
-  --text: #e6eefc;
-  --muted: #9fb0d0;
-  --line: rgba(255, 255, 255, 0.12);
-  --glass: rgba(255, 255, 255, 0.08);
-  --primary: #7c3aed;
-  --accent: #06b6d4;
-  --pink: #ec4899;
+  --bg: #04070f;
+  --bg-soft: #0b1222;
+  --text: #e6f1ff;
+  --muted: #9cb2d2;
+  --line: rgba(77, 237, 255, 0.24);
+  --glass: rgba(6, 17, 34, 0.78);
+  --primary: #3b82f6;
+  --accent: #22d3ee;
+  --pink: #8b5cf6;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
 
@@ -22,7 +22,11 @@ html { scroll-behavior: smooth; }
 body {
   font-family: "Inter", sans-serif;
   color: var(--text);
-  background: radial-gradient(circle at 20% 20%, #0b1630 0%, var(--bg) 45%);
+  background:
+    linear-gradient(rgba(10, 24, 46, 0.32) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(10, 24, 46, 0.32) 1px, transparent 1px),
+    radial-gradient(circle at 20% 20%, #0a1832 0%, var(--bg) 46%);
+  background-size: 28px 28px, 28px 28px, auto;
   line-height: 1.7;
   overflow-x: hidden;
 }
@@ -74,8 +78,9 @@ body {
 .glass {
   background: var(--glass);
   border: 1px solid var(--line);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
 }
 
 /* Header */
@@ -96,10 +101,11 @@ body {
 }
 .logo {
   text-decoration: none;
-  color: var(--text);
-  font-weight: 800;
-  letter-spacing: 0.4px;
-  font-size: 1.05rem;
+  color: #d8ebff;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  font-size: 1rem;
 }
 .logo span { color: var(--accent); }
 
@@ -112,6 +118,8 @@ body {
 .nav-links a {
   text-decoration: none;
   color: var(--muted);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.9rem;
   font-weight: 500;
   transition: 0.25s ease;
 }
@@ -122,7 +130,8 @@ body {
   display: inline-block;
   text-decoration: none;
   color: white;
-  background: linear-gradient(135deg, var(--primary), var(--accent));
+  font-family: "JetBrains Mono", monospace;
+  background: linear-gradient(135deg, #2563eb, #06b6d4);
   padding: 0.75rem 1.1rem;
   border-radius: 10px;
   font-weight: 600;
@@ -152,9 +161,10 @@ body {
 }
 .eyebrow {
   color: var(--accent);
-  font-weight: 600;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 500;
   margin-bottom: 0.6rem;
-  letter-spacing: 0.3px;
+  letter-spacing: 0;
 }
 .hero h1 {
   font-size: clamp(2rem, 5vw, 3.6rem);
@@ -179,9 +189,14 @@ body {
 .section { padding: 2.2rem 0; }
 h2 {
   font-size: clamp(1.35rem, 3vw, 2rem);
+  font-family: "JetBrains Mono", monospace;
   margin-bottom: 1rem;
 }
-h3 { margin-bottom: 0.5rem; font-size: 1.05rem; }
+h3 {
+  margin-bottom: 0.5rem;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.05rem;
+}
 p { color: var(--muted); }
 
 .grid {
@@ -215,10 +230,11 @@ p { color: var(--muted); }
 }
 .chips span {
   border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.04);
-  color: #dbe7ff;
+  background: rgba(34, 211, 238, 0.08);
+  color: #dbefff;
   padding: 0.48rem 0.8rem;
   border-radius: 999px;
+  font-family: "JetBrains Mono", monospace;
   font-size: 0.9rem;
   transition: 0.25s ease;
 }
@@ -235,7 +251,8 @@ p { color: var(--muted); }
 }
 .contact-links a {
   text-decoration: none;
-  color: #c9ddff;
+  color: #b7ddff;
+  font-family: "JetBrains Mono", monospace;
 }
 .contact-links a:hover { color: #fff; }
 
