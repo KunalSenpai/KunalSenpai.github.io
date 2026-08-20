@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XFYT23KT1G"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-XFYT23KT1G');
-</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kunal Mittal | Portfolio</title>
@@ -17,85 +8,108 @@
   <link rel="icon" type="image/png" href="logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Background blobs -->
-  <div class="bg-blobs" aria-hidden="true">
-    <span class="blob blob-1"></span>
-    <span class="blob blob-2"></span>
-    <span class="blob blob-3"></span>
+
+  <!-- Faux OS title bar -->
+  <div class="titlebar">
+    <div class="titlebar-dots" aria-hidden="true">
+      <span class="dot dot-red"></span>
+      <span class="dot dot-yellow"></span>
+      <span class="dot dot-green"></span>
+    </div>
+    <p class="titlebar-name">kunal-mittal.dev — VS Code</p>
+    <p class="titlebar-branch">⎇ main</p>
   </div>
 
-  <!-- Header -->
-  <header class="site-header glass">
-    <div class="container nav-wrap">
-      <a href="#" class="logo">K<span>M</span></a>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <a class="btn btn-sm" href="./CV.pdf" target="_blank" rel="noopener">Hire Me</a>
+  <!-- Tab strip / nav -->
+  <header class="tabbar glass-none">
+    <div class="tabbar-inner">
+      <a href="#hero" class="tab tab-active"><span class="tab-icon js">JS</span>Home</a>
+      <a href="#about" class="tab"><span class="tab-icon md">M</span>About</a>
+      <a href="#education" class="tab"><span class="tab-icon json">{ }</span>Education</a>
+      <a href="#skills" class="tab"><span class="tab-icon json">{ }</span>Skills</a>
+      <a href="#projects" class="tab"><span class="tab-icon md">M</span>Projects</a>
+      <a href="#experience" class="tab"><span class="tab-icon log">#</span>Experience</a>
+      <a href="#contact" class="tab"><span class="tab-icon sh">$</span>Contact</a>
     </div>
+    <a class="btn btn-hire" href="./Kunal Mittal CV Tech.pdf" target="_blank" rel="noopener">Download Resume</a>
   </header>
 
-  <!-- Hero -->
-  <section class="hero container reveal">
-    <p class="eyebrow">B.Sc. (Hons.) Computer Science Graduate</p>
-    <h1>
-      I build <span class="gradient-text">data-driven</span> and
-      user-focused digital experiences.
-    </h1>
-    <p class="hero-text">
-      Hi, I’m Kunal Mittal. I enjoy solving real-world problems using
-      analytics, dashboards, and practical web solutions.
-    </p>
-    <div class="hero-cta">
-      <a class="btn" href="#projects">View Projects</a>
-      <a class="btn btn-ghost" href="https://github.com/KunalSenpai" target="_blank" rel="noopener">GitHub</a>
-      <a class="btn btn-ghost" href="https://www.linkedin.com/in/kunalmittal29/" target="_blank" rel="noopener">LinkedIn</a>
-    </div>
-  </section>
-
   <main>
-    <section id="about" class="section container reveal">
-      <h2>About</h2>
-      <div class="card glass">
-        <p>
-          I’m a Computer Science graduate from Atma Ram Sanatan Dharma College,
-          University of Delhi. I work with Power BI, SQL, Python (Basics), and
-          business analysis to turn raw data into actionable insights.
-        </p>
+    <!-- Hero -->
+    <section id="hero" class="editor reveal">
+      <div class="editor-head">
+        <span class="editor-head-file">portfolio.js</span>
+        <span class="editor-head-tag">const</span>
+      </div>
+      <div class="editor-body code-lines">
+        <p class="line"><span class="kw">const</span> <span class="var">developer</span> = {</p>
+        <p class="line indent"><span class="key">name</span>: <span class="str">"Kunal Mittal"</span>,</p>
+        <p class="line indent"><span class="key">role</span>: <span class="str">"B.Sc. (Hons.) Computer Science Graduate"</span>,</p>
+        <p class="line indent"><span class="key">focus</span>: [<span class="str">"data"</span>, <span class="str">"dashboards"</span>, <span class="str">"web solutions"</span>],</p>
+        <p class="line indent"><span class="key">status</span>: <span class="str">"available_for_hire"</span>,</p>
+        <p class="line indent"><span class="key">solves</span>: <span class="fn">realWorldProblems</span>()</p>
+        <p class="line">}<span class="cursor" aria-hidden="true"></span></p>
+      </div>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#projects"><span class="prompt">$</span> View Projects</a>
+        <a class="btn btn-ghost" href="https://github.com/KunalSenpai" target="_blank" rel="noopener"><span class="prompt">$</span> GitHub</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/kunalmittal29/" target="_blank" rel="noopener"><span class="prompt">$</span> LinkedIn</a>
       </div>
     </section>
 
-    <section id="education" class="section container reveal">
-      <h2>Education</h2>
+    <!-- About -->
+    <section id="about" class="editor reveal">
+      <div class="editor-head">
+        <span class="editor-head-file">about.md</span>
+        <span class="editor-head-tag">markdown</span>
+      </div>
+      <div class="editor-body code-lines">
+        <p class="line comment">/**</p>
+        <p class="line comment indent">&nbsp;* I'm a Computer Science graduate from Atma Ram Sanatan Dharma College,</p>
+        <p class="line comment indent">&nbsp;* University of Delhi. I work with Power BI, SQL, Python (Basics), and</p>
+        <p class="line comment indent">&nbsp;* business analysis to turn raw data into actionable insights.</p>
+        <p class="line comment">&nbsp;*/</p>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="editor reveal">
+      <div class="editor-head">
+        <span class="editor-head-file">education.json</span>
+        <span class="editor-head-tag">json</span>
+      </div>
       <div class="grid two">
-        <article class="card glass hover-lift">
+        <article class="card hover-lift">
+          <p class="card-key">"degree"</p>
           <h3>B.Sc. (Hons.) Computer Science</h3>
-          <p>Atma Ram Sanatan Dharma College, University of Delhi</p>
-          <p><strong>Year:</strong> 2026</p>
-          <p><strong>CGPA:</strong> 6.84</p>
+          <p class="muted">Atma Ram Sanatan Dharma College, University of Delhi</p>
+          <div class="kv"><span class="key">year</span><span class="val">2026</span></div>
+          <div class="kv"><span class="key">cgpa</span><span class="val num">6.84</span></div>
         </article>
-        <article class="card glass hover-lift">
+        <article class="card hover-lift">
+          <p class="card-key">"schooling"</p>
           <h3>AISSCE (Commerce)</h3>
-          <p>Shri Rama Bharti Public School, Bahadurgarh</p>
-          <p><strong>Year:</strong> 2023</p>
-          <p><strong>Score:</strong> 86.4%</p>
+          <p class="muted">Shri Rama Bharti Public School, Bahadurgarh</p>
+          <div class="kv"><span class="key">year</span><span class="val">2023</span></div>
+          <div class="kv"><span class="key">score</span><span class="val num">86.4%</span></div>
         </article>
       </div>
     </section>
 
-    <section id="skills" class="section container reveal">
-      <h2>Skills</h2>
+    <!-- Skills -->
+    <section id="skills" class="editor reveal">
+      <div class="editor-head">
+        <span class="editor-head-file">skills.json</span>
+        <span class="editor-head-tag">json</span>
+      </div>
+      <div class="editor-body code-lines">
+        <p class="line"><span class="key">"technical"</span>: [<span class="str">"Power BI"</span>, <span class="str">"MySQL"</span>, <span class="str">"Python (Basics)"</span>, <span class="str">"MS Office"</span>, <span class="str">"Canva (Advanced)"</span>],</p>
+        <p class="line"><span class="key">"human"</span>: [<span class="str">"Communication"</span>, <span class="str">"Problem Solving"</span>, <span class="str">"Leadership"</span>, <span class="str">"Marketing"</span>, <span class="str">"Public Relations"</span>]</p>
+      </div>
       <div class="chips">
         <span>Power BI</span><span>MySQL</span><span>Python (Basics)</span>
         <span>MS Office</span><span>Canva (Advanced)</span>
@@ -104,32 +118,78 @@
       </div>
     </section>
 
-    <section id="projects" class="section container reveal">
-      <h2>Featured Project</h2>
-      <article class="card glass project hover-lift">
+    <!-- Projects -->
+    <section id="projects" class="editor reveal">
+      <div class="editor-head">
+        <span class="editor-head-file">projects/uber-dashboard.md</span>
+        <span class="editor-head-tag">markdown</span>
+      </div>
+      <article class="card project hover-lift">
         <div>
-          <h3>Uber Sales Dashboard (Power BI)</h3>
+          <p class="card-key"># Uber Sales Dashboard <span class="tag">Power BI</span></p>
           <p>
             Built a dashboard analyzing 150K+ Uber ride records (2024) to track
             revenue, cancellations, and demand patterns.
           </p>
-          <ul>
-            <li>Identified 62% booking completion rate.</li>
-            <li>Found major drop-offs: driver cancellations and address errors.</li>
-            <li>Used Power Query + DAX to create KPI-driven insights.</li>
+          <ul class="code-lines">
+            <li class="line"><span class="bool">true</span> — Identified 62% booking completion rate.</li>
+            <li class="line"><span class="bool">true</span> — Found major drop-offs: driver cancellations and address errors.</li>
+            <li class="line"><span class="bool">true</span> — Used Power Query + DAX to create KPI-driven insights.</li>
           </ul>
         </div>
-        <a class="btn" href="https://github.com/KunalSenpai/PowerBI-Dashboard" target="_blank" rel="noopener">
-          View Project
+        <a class="btn btn-ghost" href="https://github.com/KunalSenpai/PowerBI-Dashboard" target="_blank" rel="noopener">
+          <span class="prompt">$</span> View Code
         </a>
+      </article>
+
+      <p class="line comment project-file-label">// projects/ai-lead-agent.md</p>
+      <article class="card project hover-lift">
+        <div>
+          <p class="card-key"># AI Lead Agent <span class="tag">Full-Stack</span><span class="tag">AI</span></p>
+          <p>
+            A full-stack sales automation app that researches, scores, and drafts
+            outreach for inbound leads, with a human-approval step before Gmail delivery.
+          </p>
+          <ul class="code-lines">
+            <li class="line"><span class="bool">true</span> — AI analyzes lead intent, researches the company, and scores the opportunity.</li>
+            <li class="line"><span class="bool">true</span> — Generates a personalized sales email for human review, edit, and approval.</li>
+            <li class="line"><span class="bool">true</span> — Sends approved emails via Gmail OAuth with duplicate-send protection.</li>
+          </ul>
+          <div class="chips project-chips">
+            <span>React</span><span>TypeScript</span><span>FastAPI</span>
+            <span>Supabase</span><span>Google Gemini</span><span>Gmail API</span>
+          </div>
+        </div>
+        <div class="project-links">
+          <a class="btn btn-ghost" href="https://ai-lead-agent-phi.vercel.app/" target="_blank" rel="noopener">
+            <span class="prompt">$</span> Live Demo
+          </a>
+          <a class="btn btn-ghost" href="https://github.com/KunalSenpai/AI-Lead-Agent" target="_blank" rel="noopener">
+            <span class="prompt">$</span> View Code
+          </a>
+        </div>
       </article>
     </section>
 
-    <section id="experience" class="section container reveal">
-      <h2>Experience & Leadership</h2>
+    <!-- Experience -->
+    <section id="experience" class="editor reveal">
+      <div class="editor-head">
+        <span class="editor-head-file">experience.log</span>
+        <span class="editor-head-tag">log</span>
+      </div>
       <div class="grid three">
-        <article class="card glass hover-lift">
-            <h3>Charge d’Affaires — The Sankalp Organisation</h3>
+        <article class="card hover-lift">
+          <p class="commit"><span class="hash">a1f9c2e</span> HR Intern — Top Trove Foundation</p>
+          <p class="muted">Apr 2024 – Jul 2024</p>
+          <ul>
+            <li>Screened 50+ resumes and coordinated interviews.</li>
+            <li>Supported onboarding of 5+ hires.</li>
+            <li>Improved interview turnaround by 30%.</li>
+          </ul>
+        </article>
+
+        <article class="card hover-lift">
+          <p class="commit"><span class="hash">7bd41aa</span> Charge d'Affaires — The Sankalp Organisation</p>
           <p class="muted">May 2025 – Jan 2026</p>
           <ul>
             <li>Designed 6-month strategic impact plan.</li>
@@ -138,44 +198,41 @@
           </ul>
         </article>
 
-        <article class="card glass hover-lift">
-          <h3>Treasurer — Tech-A-Thon, CS Department</h3>
+        <article class="card hover-lift">
+          <p class="commit"><span class="hash">e02c8f1</span> Treasurer — Tech-A-Thon, CS Department</p>
           <p class="muted">Aug 2024 – Aug 2025</p>
           <ul>
             <li>Secured sponsorships through outreach.</li>
             <li>Executed hackathons and web-dev events.</li>
             <li>Coordinated 50+ volunteers and team members.</li>
-        </article>
-
-        <article class="card glass hover-lift">
-          <h3>HR Intern — Top Trove Foundation</h3>
-          <p class="muted">Apr 2024 – Jul 2024</p>
-          <ul>
-            <li>Screened 50+ resumes and coordinated interviews.</li>
-            <li>Supported onboarding of 5+ hires.</li>
-            <li>Improved interview turnaround by 30%.</li>
-          </ul>
           </ul>
         </article>
       </div>
     </section>
 
-    <section id="contact" class="section container reveal">
-      <h2>Contact</h2>
-      <div class="card glass contact-card">
-        <p>Open to internships, entry-level roles, and collaborations.</p>
+    <!-- Contact -->
+    <section id="contact" class="editor reveal">
+      <div class="editor-head">
+        <span class="editor-head-file">contact.sh</span>
+        <span class="editor-head-tag">bash</span>
+      </div>
+      <div class="terminal">
+        <p class="line"><span class="prompt">$</span> Status</p>
+        <p class="line out">Open to internships, entry-level roles, and collaborations.</p>
+        <p class="line"><span class="prompt">$</span> Get In Touch</p>
         <div class="contact-links">
-          <a href="mailto:kunalmittal291@gmail.com">kunalmittal291@gmail.com</a>
-          <a href="tel:+917988341603">+91 79883 41603</a>
-          <a href="https://github.com/KunalSenpai" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://www.linkedin.com/in/kunalmittal29/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:kunalmittal291@gmail.com">→ kunalmittal291@gmail.com</a>
+          <a href="tel:+917988341603">→ +91 79883 41603</a>
+          <a href="https://github.com/KunalSenpai" target="_blank" rel="noopener">→ github.com/KunalSenpai</a>
+          <a href="https://www.linkedin.com/in/kunalmittal29/" target="_blank" rel="noopener">→ linkedin.com/in/kunalmittal29</a>
         </div>
+        <p class="line"><span class="prompt">$</span> <span class="cursor" aria-hidden="true"></span></p>
       </div>
     </section>
   </main>
 
-  <footer class="container">
-    <p>© 2026 Kunal Mittal. Crafted with HTML & CSS.</p>
+  <footer>
+    <p class="line comment">// © 2026 Kunal Mittal. Crafted with HTML &amp; CSS.</p>
   </footer>
 
   <script>
@@ -188,6 +245,21 @@
     }, { threshold: 0.12 });
 
     revealEls.forEach((el) => observer.observe(el));
+
+    // Active tab highlight on scroll
+    const tabs = document.querySelectorAll('.tab');
+    const sections = document.querySelectorAll('main section, #hero');
+    const tabObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          tabs.forEach(t => t.classList.remove('tab-active'));
+          const active = document.querySelector(`.tab[href="#${entry.target.id}"]`);
+          if (active) active.classList.add('tab-active');
+        }
+      });
+    }, { threshold: 0.4, rootMargin: '-80px 0px -50% 0px' });
+
+    sections.forEach(s => tabObserver.observe(s));
   </script>
 </body>
 </html>
