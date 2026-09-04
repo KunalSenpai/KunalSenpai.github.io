@@ -1,6 +1,15 @@
 /* ============================================
    TOKENS
    ============================================ */
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XFYT23KT1G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XFYT23KT1G');
+</script>
 :root {
   --bg: #0b0e14;
   --bg-panel: #11151c;
